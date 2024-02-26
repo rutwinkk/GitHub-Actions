@@ -1,0 +1,12 @@
+name: ECHO_Hello
+on: workflow_dispatch
+jobs:
+  PrintHello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: One line Echo
+        run: echo Hello, world 1!
+      - name: Multi-line Echo
+        run: |
+          echo Hello World 2!
+          echo Hello World 3!
